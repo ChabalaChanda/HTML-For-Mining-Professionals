@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Title</title>
+        <style>
+            label {
+                color: black;
+                font: bold;
+            }
+            .button {
+                color: red;
+            }
+            legend {
+                font: bold;
+                color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style="display: table; align-content: center; width: 100%; text-align: center">Copy Benches</h1>
+        <fieldset>
+            <legend>USER INPUTS</legend>
+            <table>
+                <tr>
+                    <td>
+                        <label> Model Name : </label>
+                    </td>
+                    <td>
+                        <input type="text" value="" id="model_name" style="text-align: center" />
+                    </td>
+                    <td>
+                        <input
+                            type="button"
+                            class="button"
+                            value="..."
+                            id="model_browser"
+                            style="text-align: center; width: 30px" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label> Starting RL : </label>
+                    </td>
+                    <td>
+                        <input type="text" value="1010" id="bench_rl" style="text-align: center" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label> Bench Height (m): </label>
+                    </td>
+                    <td>
+                        <input type="text" value="10" id="bench_height" style="text-align: center" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label> Number of Benches : </label>
+                    </td>
+                    <td>
+                        <input type="text" value="10" id="bench_number" style="text-align: center" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label> File Output Prefix : </label>
+                    </td>
+                    <td>
+                        <input type="text" value="Bench_Slice_" id="file_out" style="text-align: center" />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" style="text-align: center">
+                        <input type="button" value="Execute" id="button_execute" onclick="runProgram" />
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </body>
+</html>
